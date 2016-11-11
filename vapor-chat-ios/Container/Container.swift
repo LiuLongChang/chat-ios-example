@@ -9,7 +9,14 @@
 import UIKit
 
 class Container: UIViewController {
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+
+        get{
+            return .default
+        }
     }
+
+    
 }
